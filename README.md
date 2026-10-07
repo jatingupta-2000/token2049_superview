@@ -1,98 +1,97 @@
 # SuperView
 
-You already have a view of the world. SuperView is the place that view becomes a book.
+SuperView lets you write what you think will happen in the world, and turns that into a real portfolio you can track and invest in.
 
 ## Problem
 
-Most people do not start with a ticker. They start with a sentence. AI spend will outrun the cloud budget. A supply chain is about to break. A chart says the next quarter looks rough. Those sentences usually die in a group chat.
+Most people don't think in tickers. They think in ideas, like "AI companies will spend more on chips next year" or "there is going to be a water shortage in big cities". Everyone has views like this, but they mostly end up as a tweet or a message in a group chat and nobody ever checks if they were right.
 
-Social feeds reward the loudest take. Portfolio tools start at a search box. Neither one asks what you actually believe, or checks whether that belief made money. A belief like "malaria cases will rise" does not name a company, a weight, or a reason to sell. Someone still has to find the mechanism, pick comparable exposures, and size the names so one story does not own the whole book.
+If you actually want to invest in an idea like this, it is a lot of work. You have to figure out which companies benefit, how directly they benefit, how much to put in each one, and what would make you exit. Most people don't have the time for that, so they either skip it or buy one popular stock and hope for the best.
+
+On the other side, social apps rank people by followers and likes, not by whether their calls made money.
 
 ## Solution
 
-SuperView sits in that gap. You write. An agent researches. A basket gets published. Anyone can follow it, copy it, argue with it, or put money on it. Status comes from how the book does against a benchmark, not from how many people liked the post.
+On SuperView you just write your view in one or two lines. Our agent does the research, picks the stocks, decides the weights and builds a basket for you. You can publish it, and then anyone can follow it, comment on it, copy it or put money behind it.
 
-The sentence stays attached to the holdings. The holdings stay attached to a live mark. If the story changes, the agent can come back and suggest a trim, an add, an exit, or a full rebalance. The Masumi agent can do that work and invest in the stocks itself.
+Every view is tracked live against a benchmark, so the leaderboard is based on actual performance and not on who is the loudest. If something changes later, the agent can suggest adding, trimming, exiting or rebalancing.
+
+We also have a Masumi agent on Cardano. Anyone can hire it, give it a view, and it will do the full research and invest in the stocks on its own.
 
 Video: https://www.loom.com/share/745798eb01d44429914ee12392922126
 
 Website: https://superview.fun
 
-## The idea
+## Ways to start a view
 
-SuperView treats the view as the object. The point is a book you can watch, not a one-shot stock pick.
+You can start in three ways:
 
-There are a few ways in.
+- Write a normal market view in your own words.
+- Switch to the memecoin desk and write a view about memecoins instead of stocks.
+- Give an astrology chart (Vedic or Western). A lot of people already use astrology to think about markets, so we treat it like any other input. The agent reads the chart, writes a market prediction from it, and then builds a basket the same way.
 
-- Write a market belief in your own words.
-- Switch desks and write about memecoins instead of listed companies.
-- Paste an astrology chart, Vedic or Western, and let that chart become the starting prediction.
+## How it works for a user
 
-Astrology is not a joke desk hiding in a corner. Plenty of people already read markets through a chart. SuperView takes that reading seriously enough to turn it into the same thing as any other view: a mechanism, a basket, and a score you can check later.
+1. Write your view, or paste an astrology chart.
+2. Choose stocks or memecoins.
+3. The agent researches and builds the basket. You can see what it is doing while it works.
+4. Publish it. Now it has its own page with the thesis, holdings, comments and an invest button.
+5. Track it. You can see the latest price, today's change, how much your money is worth and how the basket is doing against the S&P 500 (or against SOL for memecoins).
+6. Follow people whose views are doing well, or copy their basket into your own portfolio.
 
-## What you do
+You can start with paper money first, which fills against live prices. When you are ready, you can invest for real from your Solana wallet.
 
-1. Write one sentence, or a chart, from home or from a new view.
-2. Pick the desk. Stocks or memes. On Solana, that choice also picks how the book will be marked.
-3. Watch the agent work. It interprets the thesis, screens names, writes notes, and sizes a basket.
-4. Publish. The view becomes something other people can open: thesis, holdings, comments, copy, invest.
-5. Track it. Last price, today's move, what your stake is worth, and how the book sits versus the S&P 500 or versus SOL.
-6. Follow people whose views actually work. Copy a basket into your own pocket. Leave the agent watching.
+## Stocks and memecoins on Solana
 
-Paper comes first. You can run the whole loop against live quotes without sending a trade. When you want the real thing, the same basket can be filled from a Solana wallet.
+All the markets in SuperView are on Solana.
 
-## Solana
+For stocks, we use stock tokens on Solana. These track real listed companies like Nvidia or Apple, so the agent can pick from real companies and get live prices for them. Live investing uses USDC from your wallet, and you need a small amount of SOL for fees.
 
-Solana is where the market lives.
+Memecoins are kept on a separate desk. Here the agent looks at launchpad coins instead of companies, and filters out coins that are too new or don't have enough liquidity. Memecoin baskets are compared against SOL instead of the S&P 500. The money in your memecoin portfolio is kept separate from your stock portfolio. Memecoins are very risky and can go to zero, so please keep that in mind.
 
-Stock tokens on Solana give economic exposure to listed companies. They are not shares, and they are not a brokerage account. They are the instrument the basket is built from: a catalog the agent can actually screen, quote, and size. You pick Solana when you write the view. Quotes stay live. A paper book fills against those quotes. A live book spends USDC from your wallet, with a little SOL left over for fees.
+## Masumi agent on Cardano
 
-Memecoins stay on their own desk, also on Solana. The agent screens launchpad coins instead of listed companies, and that book is marked versus SOL. Cash on the meme desk does not mix with the stock book. The risk is obvious and we say it plainly. A coin can go to zero. Liquidity can vanish. This is not advice.
+Our research agent is also listed as a Masumi agent on Cardano.
 
-The split matters. A stock view and a meme view can both start from the same kind of sentence, but they should not pretend to be the same market. Solana holds both. The product keeps the books apart.
+Anyone can hire it by paying on Cardano through Masumi and sending a view. The agent does the same research it does inside the app, builds the basket, and can invest in those stocks on Solana. It also sends back a short report with:
 
-## Cardano, and hiring the agent
+- what the view is really about
+- the main assumptions
+- what would prove the view wrong
+- the stocks in the basket with their weights and the reason for each one
 
-The same agent is a Masumi agent on Cardano, and it can invest in stocks.
-
-Inside the app, you just write and wait. Outside the app, someone can hire that coworker. They pay on Cardano, through Masumi, and send a belief. The agent takes the job, runs the research, sizes the basket, and can put that basket on. Stocks, on Solana, the same way a view in the app can be filled. It also returns a written brief: the mechanism, the assumptions, what would prove the view wrong, and the basket with weights and roles.
-
-Cardano is how you hire it. Solana is where the stock tokens sit. The agent is allowed to do both sides of the work: figure out the book, then invest in it.
-
-The brief is a document, not a blob of raw output. It is what you would hand to a person: here is the belief, here is why these names, here is how big each one is, here is what would make us leave.
+So the payment happens on Cardano, and the stocks are bought on Solana.
 
 ## How the agent works
 
-The agent is a small investment committee. One voice does not get to invent the book and grade it.
+We did not want one AI prompt to just pick some stocks. So the agent is set up like a small investment team, where each step has a different job.
 
-It starts with the sentence you wrote.
+**1. Understanding the view.** First the agent reads what you wrote and breaks it down. What is the actual reason this would make money, what time frame we are talking about, what assumptions it depends on, and what would prove it wrong. From this it comes up with 3 to 6 angles that can be invested in. For an astrology chart, this step reads the chart first and turns it into a market prediction. For memecoins, it looks at the narrative and the trend instead of a company's business.
 
-An interpreter reads it and pulls out the parts a portfolio needs. What is the economic mechanism. What horizon are we talking about. Which assumptions are doing the work. What would falsify the view. From that it names a handful of investable angles, usually three to six. If you sent an astrology chart, this first pass reads the chart in Vedic or Western and writes a market prediction before any name is chosen. If you are on the meme desk, it looks for narrative and flow instead of a listed business.
+**2. Finding candidates.** For stocks, it goes through the list of stock tokens available on Solana and also searches the web to find companies it might have missed. It only keeps companies that actually have a token we can buy. For memecoins, it goes through launchpad coins and skips the ones that look unsafe or too thin.
 
-Then it goes looking. On the stock desk it screens the Solana stock-token catalog and can go out on the web for names the catalog alone would miss. Those names get mapped back to instruments that actually exist. On the meme desk it screens launchpad coins, with a bias toward things that are old enough and liquid enough to be a position rather than a ghost.
+**3. Research on each name.** Every candidate gets its own research notes. Then each one is scored on how directly it benefits from the view, how much of its business is tied to it, how confident we are, and how risky it is. Each stock also gets a role in the basket: direct, indirect, related, or a hedge.
 
-Each candidate gets diligence. Notes, not a slogan. Then an analyst scores them: how direct the exposure is, how pure it is, how confident we should be, and what the risks are. A name can be in the basket because it is the thing itself, because it sits next to the thing, because it shares the same interest, or because it hedges the view.
+**4. Building the basket.** A portfolio step decides the weights. Usually it is 5 to 12 names plus some cash. There are limits so that one company or one sector does not take over the whole basket. If it cannot build a proper basket, it falls back to a simpler one instead of forcing it.
 
-A portfolio manager sizes the book. Typically five to twelve names, plus cash. Roles stay visible. One theme should not be allowed to fail the constraints and sneak through as a single stock with a story attached. If the basket cannot be built cleanly, it falls back to something simpler rather than pretending.
+**5. Review.** A separate reviewer model checks the basket and can approve it or send it back for changes. This way the same model that picked the stocks is not the one approving them.
 
-A critic reads the result separately and can send it back. Approve, or revise. The same model that fell in love with the idea does not get the last word.
+**6. Watching after publish.** Once it is live, the agent keeps an eye on it. Later it can say nothing has changed, or suggest a rebalance, adding a stock, trimming one, or exiting.
 
-What you see at the end is a view: a public thesis, holdings, and a live score. Stock books are marked against the S&P 500. Meme books are marked against SOL. The agent does not walk away. It keeps watching and can later say nothing changed, or that it is time to rebalance, add, trim, or exit.
+When the job comes from Masumi, the exact same steps run. The only difference is that the report goes back to the person who hired the agent.
 
-When the job came in through Masumi, that same committee still runs. The brief goes back to the person who paid. The invest can go on too. Hiring the agent on Cardano does not stop it from buying the stock basket it just built.
+## After you invest
 
-## After you publish
+On the view page you can see how much your money is worth now, your profit or loss in dollars and percent, and how each stock in the basket is doing. Right after you invest, it shows today's move. After that it shows the change since you invested.
 
-The view page is more than a headline versus the benchmark.
+The portfolio page shows the same numbers for everything you hold, along with the comparison to the benchmark.
 
-Your stake shows current value, dollar profit or loss, and percent. Right after a fill, that is today's tape on the money you put in. Once the mark moves off the fill, it becomes since you invested. Each name shows last price, today's move, and the dollars on your slice. The portfolio shows the same thing at pocket level: value, profit or loss, percent of cost, the benchmark, and per-name dollars.
+Copying a view puts the same basket in your own portfolio. Comments stay on the view, so the discussion is about that specific idea. The leaderboard ranks views by how they actually performed.
 
-Copying a view pulls that basket into your own pocket. Comments sit on the thesis, not on a detached hot take. The leaderboard ranks views by how the market treated them.
+## Note on Solana
 
-## Solana
+We run on Solana Mainnet Beta with real stock tokens. Stock tokens are not available on Devnet, so there is no real market there for us to test this on.
 
-We run on Solana Mainnet Beta, against real stock tokens. Those tokens are not on Devnet. A Devnet program would be a toy market, and that is the wrong place to show this product.
+We have not only read data from the chain. The full flow is built. Baskets are made from real stock token mints on mainnet, prices come from them, swaps go through Jupiter, tokens sit in normal SPL token accounts, and the wallet is a Privy wallet that handles login, wallet creation and signing. We did not deploy our own program because we did not need one. The stock market we are using already exists on mainnet, so we integrate the existing programs, Jupiter and the SPL token program (`TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA`).
 
-The app does not only read chain data. A basket is built from stock-token mints that exist on mainnet. Quotes, balances, and routes come from those mints. When someone puts money on a view for real, the swap is built through Jupiter, the token accounts are normal SPL accounts, and the wallet that signs is a Privy wallet. Login, wallet creation, and signing are handled. We did not deploy our own program, because the stock market we use is already on mainnet. The programs we integrate are the ones already there, Jupiter and the SPL token program (`TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA`).
-
-Putting real USDC through that path on every demo is a bad way to prove the loop. The right way is a dry run, and that dry run is a feature: paper money. You choose an amount, the book fills against live mainnet quotes, and the stake, the profit and loss, and the benchmark all move as if the money went in. Same basket, same prices, same agent. The cash is paper so you can do it without sending a mainnet transaction you cannot undo. When you want the real fill, the live path is the same basket, signed and sent from the Privy wallet.
+Since this is mainnet, sending real money for every test or demo does not make sense. That is why we built paper money as a proper feature. You pick an amount, it fills against live mainnet prices, and your value, profit and loss and benchmark all update exactly like a real investment. It is the same basket, the same prices and the same agent, just without sending a real transaction. When you want to invest for real, the same basket is signed and sent from your Privy wallet.
