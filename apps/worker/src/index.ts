@@ -26,6 +26,21 @@ import { quoteSolanaAssets, syncBagsCatalog, syncJupiterMemeCatalog, syncXStocks
 import { handleExecutionJob, reportProviderHealth } from "./execution.js";
 
 const env = loadEnv();
+
+async function unlockRedisWrites() {
+  const client = new Redis(env.REDIS_URL, { maxRetriesPerRequest: 1, enableReadyCheck: false, lazyConnect: true });
+  try {
+    await client.connect();
+    await client.config("SET", "stop-writes-on-bgsave-error", "no");
+    await client.config("SET", "save", "");
+    log("redis", "writes unlocked");
+  } catch (err) {
+    logError("redis", "config", err);
+  } finally {
+    client.disconnect();
+  }
+}
+
 function redisClient() {
   const client = new Redis(env.REDIS_URL, { maxRetriesPerRequest: null, enableReadyCheck: false });
   client.on("error", (err) => logError("redis", "error", err));
@@ -392,7 +407,8 @@ const researchWorker = new Worker(
     const runId = String(job.data.runId);
     log("worker", "research queued", { run: runId, attempt: job.attemptsMade + 1 });
     const emit = async (stage: string, message: string, payload?: unknown) => {
-      log("worker", `${stage}  ${message}`, { run: runId });
+      const noisy = stage === "retrieve" && /^Screened /i.test(message);
+      if (!noisy) log("worker", `${stage}  ${message}`, { run: runId });
       await prisma.researchEvent.create({ data: { runId, stage, message, payload: payload as object | undefined } });
       await publish(`research:${runId}`, { stage, message, payload, at: new Date().toISOString() });
     };
@@ -572,6 +588,7 @@ function listenHealth() {
 
 schedule()
   .then(async () => {
+    await unlockRedisWrites();
     const extra = await refreshChainlistRpcs().catch(() => []);
     if (extra.length) log("worker", "chainlist rpcs", { n: extra.length });
     await hydratePrevClose().catch((e) => logError("worker", "prevclose", e));
