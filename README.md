@@ -43,11 +43,11 @@ The split matters. A stock view and a meme view can both start from the same kin
 
 ## Cardano, and hiring the agent
 
-The research agent is also a Masumi agent on Cardano.
+The same agent is a Masumi agent on Cardano, and it can invest in stocks.
 
-Inside the app, you just write and wait. Outside the app, someone can hire that same coworker. They pay on Cardano, through Masumi, and send a belief. The agent takes the job, runs the research, and returns a written brief: the mechanism, the assumptions, what would prove the view wrong, and the basket with weights and roles.
+Inside the app, you just write and wait. Outside the app, someone can hire that coworker. They pay on Cardano, through Masumi, and send a belief. The agent takes the job, runs the research, sizes the basket, and can put that basket on. Stocks, on Solana, the same way a view in the app can be filled. It also returns a written brief: the mechanism, the assumptions, what would prove the view wrong, and the basket with weights and roles.
 
-Cardano payment is for hiring the agent. It does not place the trades. Investing, paper or live, stays in SuperView, on the Solana books described above. The two chains have different jobs. Solana is the market. Cardano is how you pay an agent to do the research.
+Cardano is how you hire it. Solana is where the stock tokens sit. The agent is allowed to do both sides of the work: figure out the book, then invest in it.
 
 The brief is a document, not a blob of raw output. It is what you would hand to a person: here is the belief, here is why these names, here is how big each one is, here is what would make us leave.
 
@@ -69,7 +69,7 @@ A critic reads the result separately and can send it back. Approve, or revise. T
 
 What you see at the end is a view: a public thesis, holdings, and a live score. Stock books are marked against the S&P 500. Meme books are marked against SOL. The agent does not walk away. It keeps watching and can later say nothing changed, or that it is time to rebalance, add, trim, or exit.
 
-When the job came in through Masumi, that same work is wrapped as the brief and handed back to the purchaser. The committee is the same. The door is different.
+When the job came in through Masumi, that same committee still runs. The brief goes back to the person who paid. The invest can go on too. Hiring the agent on Cardano does not stop it from buying the stock basket it just built.
 
 ## After you publish
 
