@@ -8,7 +8,10 @@ coverage
 apps/web/.next
 apps/web/tsconfig.tsbuildinfo
 packages/db/generated
+apps/masumi-agent/data
 .pgdata
+*.dump
+masumi-payment-db-*.dump
 *.tsbuildinfo
 
 # Secrets and local env
