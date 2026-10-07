@@ -2,15 +2,25 @@
 
 You already have a view of the world. SuperView is the place that view becomes a book.
 
-Most people do not start with a ticker. They start with a sentence. AI spend will outrun the cloud budget. A supply chain is about to break. A chart says the next quarter looks rough. Those sentences usually die in a group chat. SuperView keeps them, turns them into a sized basket, and then lets the market grade them in public.
+## Problem
 
-This started as a simple annoyance. Social feeds reward the loudest take. Portfolio tools start at a search box. Neither one asks what you actually believe, or checks whether that belief made money. SuperView sits in the gap. You write. An agent researches. A basket gets published. Anyone can follow it, copy it, argue with it, or put money on it. Status comes from how the book does against a benchmark, not from how many people liked the post.
+Most people do not start with a ticker. They start with a sentence. AI spend will outrun the cloud budget. A supply chain is about to break. A chart says the next quarter looks rough. Those sentences usually die in a group chat.
+
+Social feeds reward the loudest take. Portfolio tools start at a search box. Neither one asks what you actually believe, or checks whether that belief made money. A belief like "malaria cases will rise" does not name a company, a weight, or a reason to sell. Someone still has to find the mechanism, pick comparable exposures, and size the names so one story does not own the whole book.
+
+## Solution
+
+SuperView sits in that gap. You write. An agent researches. A basket gets published. Anyone can follow it, copy it, argue with it, or put money on it. Status comes from how the book does against a benchmark, not from how many people liked the post.
+
+The sentence stays attached to the holdings. The holdings stay attached to a live mark. If the story changes, the agent can come back and suggest a trim, an add, an exit, or a full rebalance. The Masumi agent can do that work and invest in the stocks itself.
+
+Video: https://www.loom.com/share/10993da646ef4b03a6873b02164cd2f2
+
+Website: https://superview.fun
 
 ## The idea
 
-A belief is not a portfolio. "Malaria cases will rise" does not name a company, a weight, or a reason to sell. Someone still has to find the economic mechanism, pick comparable exposures, leave room for being wrong, and size the names so one story does not own the whole book.
-
-SuperView treats the view as the object. The sentence stays attached to the holdings. The holdings stay attached to a live mark. If the story changes, the agent can come back and suggest a trim, an add, an exit, or a full rebalance. The point is not a one-shot stock pick. The point is a view you can watch.
+SuperView treats the view as the object. The point is a book you can watch, not a one-shot stock pick.
 
 There are a few ways in.
 
