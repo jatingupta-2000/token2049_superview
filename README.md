@@ -62,6 +62,12 @@ Anyone can hire it by paying on Cardano through Masumi and sending a view. The a
 
 So the payment happens on Cardano, and the stocks are bought on Solana.
 
+The agent is live on Sokosumi (Cardano Preprod):
+
+- Coworker: SuperView Agent
+- Vendor: SuperView
+- Vendor ID: `01a11371-632e-71ea-b824-160e66a678c2`
+
 ## How the agent works
 
 We did not want one AI prompt to just pick some stocks. So the agent is set up like a small investment team, where each step has a different job.
