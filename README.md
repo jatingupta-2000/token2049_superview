@@ -91,4 +91,12 @@ Copying a view pulls that basket into your own pocket. Comments sit on the thesi
 
 ## What this is not
 
-SuperView is software for writing, researching, publishing, and tracking market views. It is not a broker. It does not give investment advice. Stock tokens are economic exposure, subject to whether the instrument exists and whether you are allowed to touch it. Paper balances are a demonstration. Astrology is an input to a view, not a promise. Memecoins can go to zero.
+SuperView is software for writing, researching, publishing, and tracking market views. It is not a broker. It does not give investment advice. Stock tokens are economic exposure, subject to whether the instrument exists and whether you are allowed to touch it. Astrology is an input to a view, not a promise. Memecoins can go to zero.
+
+## Solana
+
+We run on Solana Mainnet Beta, against real stock tokens. Those tokens are not on Devnet. A Devnet program would be a toy market, and that is the wrong place to show this product.
+
+The app does not only read chain data. A basket is built from stock-token mints that exist on mainnet. Quotes, balances, and routes come from those mints. When someone puts money on a view for real, the swap is built through Jupiter, the token accounts are normal SPL accounts, and the wallet that signs is a Privy wallet. Login, wallet creation, and signing are handled. We did not deploy our own program, because the stock market we use is already on mainnet. The programs we integrate are the ones already there, Jupiter and the SPL token program (`TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA`).
+
+Putting real USDC through that path on every demo is a bad way to prove the loop. The right way is a dry run, and that dry run is a feature: paper money. You choose an amount, the book fills against live mainnet quotes, and the stake, the profit and loss, and the benchmark all move as if the money went in. Same basket, same prices, same agent. The cash is paper so you can do it without sending a mainnet transaction you cannot undo. When you want the real fill, the live path is the same basket, signed and sent from the Privy wallet.
