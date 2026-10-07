@@ -14,7 +14,7 @@ SuperView sits in that gap. You write. An agent researches. A basket gets publis
 
 The sentence stays attached to the holdings. The holdings stay attached to a live mark. If the story changes, the agent can come back and suggest a trim, an add, an exit, or a full rebalance. The Masumi agent can do that work and invest in the stocks itself.
 
-Video: https://www.loom.com/share/10993da646ef4b03a6873b02164cd2f2
+Video: https://www.loom.com/share/745798eb01d44429914ee12392922126
 
 Website: https://superview.fun
 
@@ -88,10 +88,6 @@ The view page is more than a headline versus the benchmark.
 Your stake shows current value, dollar profit or loss, and percent. Right after a fill, that is today's tape on the money you put in. Once the mark moves off the fill, it becomes since you invested. Each name shows last price, today's move, and the dollars on your slice. The portfolio shows the same thing at pocket level: value, profit or loss, percent of cost, the benchmark, and per-name dollars.
 
 Copying a view pulls that basket into your own pocket. Comments sit on the thesis, not on a detached hot take. The leaderboard ranks views by how the market treated them.
-
-## What this is not
-
-SuperView is software for writing, researching, publishing, and tracking market views. It is not a broker. It does not give investment advice. Stock tokens are economic exposure, subject to whether the instrument exists and whether you are allowed to touch it. Astrology is an input to a view, not a promise. Memecoins can go to zero.
 
 ## Solana
 
